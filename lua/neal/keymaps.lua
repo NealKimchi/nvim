@@ -24,6 +24,7 @@ keymap("n", "<C-k>","<C-w>k", opts)
 keymap("n", "<C-l>","<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>t", ":terminal<cr>", opts)
 
 --Navigate Buffers--
 keymap("n","<S-l>", ":bnext<CR>", opts)
@@ -38,3 +39,7 @@ keymap("i", "jk","<Esc>", opts)
 keymap("v", "<S-Tab>", ">gv", opts)
 keymap("v", "<C-Tab>", "<gv", opts)
 
+--Move text up and down
+keymap("v", "mj", ":m .+2<CR>gv", opts) --doesn't work
+keymap("v", "mk", ":m .-2<CR>gv", opts)
+keymap("v", "p", '"_dP', opts) --makes it so if i paste a texton top of another, the buffer stays the same

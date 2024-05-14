@@ -1,9 +1,9 @@
 local options = {
     -- Do --help options for full list
     number = true,		        --adds line numbers
-    --vim.opt.relativenumber = true		--adds relative line numbers	
+    relativenumber = true,		--adds relative line numbers	
     ruler = true,		        --always shows cursor position
-    --cursorline = true               --shows which line cursor is on
+    cursorline = true,               --shows which line cursor is on
     autoindent = true,		--indents to last paragraph
     expandtab = true,		--converts tab to spaces
     shiftwidth = 4,		        --indent length is 4 spaces
@@ -24,7 +24,7 @@ local options = {
     numberwidth = 4,                 --sets number col width to 4 (def = 8)
     signcolumn = "yes",              --always shows sign column
     wrap = true,                     --wraps line if too long
-    scrolloff = 8,                   --no scroll offset
+    scrolloff = 10,                   --no scroll offset
     --have_nerd_font = true,           --Allows nerd font
     guifont = "monospace:h17",       --sets ui font
     showmode = false,                --dont need to show mode as its in the status bar
@@ -34,6 +34,7 @@ local options = {
     listchars = { tab = '» ', trail = '·', nbsp = '␣' },     --displays white space with these symbols
     inccommand = 'split',            --preview subs live as i type
     hlsearch = true,                 --highlights on search
+    termguicolors = true,
 }
 
 vim.opt.shortmess: append "c"
