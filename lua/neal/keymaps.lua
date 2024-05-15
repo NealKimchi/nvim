@@ -43,3 +43,8 @@ keymap("v", "<C-Tab>", "<gv", opts)
 keymap("v", "mj", ":m .+2<CR>gv", opts) --doesn't work
 keymap("v", "mk", ":m .-2<CR>gv", opts)
 keymap("v", "p", '"_dP', opts) --makes it so if i paste a texton top of another, the buffer stays the same
+
+--Telescope
+-- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
