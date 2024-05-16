@@ -5,4 +5,7 @@ require('neal.cmp')
 require('neal.lsp')
 require('neal.telescope')
 require('neal.treesitter')
+require('neal.autopairs')
+require('neal.comment')
+require('neal.gitsigns')
 vim.cmd "colorscheme tokyonight"
