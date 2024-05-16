@@ -58,6 +58,9 @@ return packer.startup(function(use)
     use "saadparwaiz1/cmp_luasnip"   --snippet completion
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-nvim-lua"
+    use "windwp/nvim-autopairs" --autocomplete brackets, paranthesis, quotes
+    use "numToStr/Comment.nvim" -- easily comment stuff
+    use "JoosepAlviste/nvim-ts-context-commentstring" --context commenting
     --snippet engine
     use "L3MON4D3/LuaSnip" --snip engine
     use "rafamadriz/friendly-snippets" --friendly snippets
@@ -78,6 +81,12 @@ return packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
+
+    use "p00f/nvim-ts-rainbow"
+    
+    --Git
+    use "lewis6991/gitsigns.nvim"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
