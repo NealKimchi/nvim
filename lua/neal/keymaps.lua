@@ -33,6 +33,8 @@ keymap("n","<S-h>", ":bprevious<CR>", opts)
 --Insert--
 --Press jk fast to enter normal mode
 keymap("i", "jk","<Esc>", opts)
+keymap("i", "<C-h>","<Left>", opts)
+keymap("i", "<C-l>","<Right>", opts)
 
 --Visual--
 --Allows for block indentations
