@@ -45,7 +45,8 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "folke/tokyonight.nvim"
-  
+    use "nvim-tree/nvim-web-devicons"
+    use "nvim-tree/nvim-tree.lua"
     --Colorschemes
     use "lunarvim/colorschemes" --library of a bunch of color schemes
 
@@ -82,10 +83,19 @@ return packer.startup(function(use)
         run = ":TSUpdate",
     }
 
-    use "p00f/nvim-ts-rainbow"
+    use "HiPhish/rainbow-delimiters.nvim"
     
     --Git
     use "lewis6991/gitsigns.nvim"
+
+    --ToggleTerm
+    use "akinsho/toggleterm.nvim"
+
+    -- Status Bar
+    use "freddiehaddad/feline.nvim"
+
+    --Vim/Tmux Navigator
+    use "christoomey/vim-tmux-navigator"
 
 
   -- Automatically set up your configuration after cloning packer.nvim

@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup{
-    ensure_installed = {"c", "lua", "vim" , "javascript", "python", "markdown"},
+    ensure_installed = {"c", "lua", "vim" , "python", "markdown", "javascript"},
     sync_install = false,
     ignore_install = {},
     highlight = {
